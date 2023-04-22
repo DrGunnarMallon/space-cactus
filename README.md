@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Astro Theme Cactus logo" src="./gh-assets/astro-cactus-logo.png" width="70" />
+  <img alt="Astro Theme Space Cactus logo" src="./gh-assets/astro-cactus-logo.png" width="70" />
 </div>
 <h1 align="center">
   🚀 Astro Theme Space Cactus 🌵
@@ -24,7 +24,11 @@ Astro Theme Space Cactus is a simple opinionated starter built with the Astro fr
 
 ## Demo 💻
 
+<<<<<<< HEAD
 Check out my personal website for a [Demo](https:/gunnarmallon.com/)
+=======
+Check out my website for a [Demo](https://gunnarmallon.com/)
+>>>>>>> c8fc3e8767965cfbe3047a3263c3b8db74426ad2
 
 ## Quick start
 
