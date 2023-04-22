@@ -21,6 +21,8 @@ export default {
 		extend: {
 			colors: {
 				bgColor: "var(--theme-bg)",
+				bgColorCard: "var(--theme-card-bg)",
+				borderCard: "var(--theme-card-border)",
 				textColor: "var(--theme-text)",
 				link: "var(--theme-link)",
 				accent: "var(--theme-accent)",

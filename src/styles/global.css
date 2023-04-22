@@ -4,23 +4,41 @@
 	:root {
 		color-scheme: light;
 		--theme-bg: #fafafa;
+		--theme-card-bg: rgb(254, 236, 236);
+		--theme-card-border: rgb(227, 169, 198);
 		--theme-link: #567c77;
 		--theme-text: #22272a;
 		--theme-accent: #cc2a42;
 		--theme-accent-2: #111;
 		--theme-quote: #cc2a42;
 		--theme-menu-bg: rgb(250 250 250 / 0.85);
+
+		--color-fill: rgb(250, 252, 252);
+		--color-text-base: rgb(34, 46, 54);
+		--color-accent: rgb(211, 0, 106);
+		--color-card: rgb(234, 206, 219);
+		--color-card-muted: rgb(241, 186, 212);
+		--color-border: rgb(227, 169, 198);
 	}
 
 	:root.dark {
 		color-scheme: dark;
 		--theme-bg: #1d1f21;
+		--theme-card-bg: rgb(75, 76, 89);
+		--theme-card-border: rgb(134, 67, 107);
 		--theme-link: #d480aa;
-		--theme-text: #c9cacc;
-		--theme-accent: #2bbc89;
+		--theme-text: rgb(233, 237, 241);
+		--theme-accent: rgba(255, 120, 200, 1);
 		--theme-accent-2: #eee;
 		--theme-quote: #ccffb6;
 		--theme-menu-bg: rgb(29 31 33 / 0.85);
+
+		--color-fill: rgb(53, 54, 64);
+		--color-text-base: rgb(233, 237, 241);
+		--color-accent: rgb(255, 120, 200);
+		--color-card: rgb(75, 76, 89);
+		--color-card-muted: rgb(113, 85, 102);
+		--color-border: rgb(134, 67, 107);
 	}
 
 	html {
@@ -28,7 +46,7 @@
 	}
 
 	html body {
-		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
+		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-base font-normal text-textColor antialiased;
 	}
 }
 

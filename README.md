@@ -2,10 +2,10 @@
   <img alt="Astro Theme Cactus logo" src="./gh-assets/astro-cactus-logo.png" width="70" />
 </div>
 <h1 align="center">
-  🚀 Astro Theme Cactus 🌵
+  🚀 Astro Theme Space Cactus 🌵
 </h1>
 
-Astro Theme Cactus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.
+Astro Theme Space Cactus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.
 
 ## Key Features
 
@@ -24,7 +24,7 @@ Astro Theme Cactus is a simple opinionated starter built with the Astro framewor
 
 ## Demo 💻
 
-Check out the [Demo](https://astro-theme-cactus.netlify.app/), hosted on Netlify
+Check out my personal website for a [Demo](https:/gunnarmallon.com/)
 
 ## Quick start
 

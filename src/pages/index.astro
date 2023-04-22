@@ -4,6 +4,8 @@ import PageLayout from "@/layouts/Base";
 import PostPreview from "@/components/blog/PostPreview";
 import SocialList from "@/components/SocialList";
 import { sortMDByDate } from "@/utils";
+import CardList from "@/components/CardList";
+import Card from "@/components/Card";
 
 const MAX_POSTS = 10;
 const allPosts = await getCollection("post");
@@ -14,14 +16,36 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 	<section>
 		<h1 class="title mb-6">Hello World!</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to create a personal
-			blog. If you want to know more about how you can customise me, add more posts, and make it
-			your own, click on one the github icon link below which will take you to my repo.
+			Welcome to my digital portfolio! As an AI enthusiast, researcher, and educator, I'm excited to
+			showcase my passion for all things AI and palaeo. Through stunning AI art, groundbreaking
+			research, tutorial videos, and full online courses, I aim to inspire and educate others on the
+			limitless possibilities of this rapidly growing field.
+		</p>
+		<p class="mb-4">
+			Whether you're a fellow AI enthusiast, an aspiring programmer, or simply curious about the
+			future of technology, you're sure to find something engaging and thought-provoking here. So,
+			come along on this journey with me and let's explore the exciting world of AI together!
 		</p>
 		<SocialList />
 	</section>
+	<section>
+		<CardList>
+			<Card title={"Generative Art"} image={"/landscape1.png"} link={"#"}>
+				Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+				chronological order
+			</Card>
+			<Card title={"Tutorial Videos"} image={"/landscape2.png"} link={"#"}>
+				Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+				chronological order
+			</Card>
+			<Card title={"Full Courses"} image={"/landscape3.png"} link={"#"}>
+				Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+				chronological order
+			</Card>
+		</CardList>
+	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Posts</h2>
+		<h2 class="title mb-4 text-xl">Featured Posts</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				allPostsByDate.map((p) => (
@@ -33,7 +57,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		</ul>
 	</section>
 	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
+		<h2 class="title mb-4 text-xl">Courses</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			<li>
 				<a
@@ -41,9 +65,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 					target="_blank"
 					rel="noopener noreferrer"
 					class="cactus-link inline-block"
-					>Astro
+					>Programming
 				</a>:
-				<p class="inline-block sm:mt-2">Build fast websites, faster.</p>
+				<p class="inline-block sm:mt-2">Python for Academia - From Zero to Hero</p>
 			</li>
 			<li>
 				<a
@@ -51,11 +75,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 					target="_blank"
 					rel="noopener noreferrer"
 					class="cactus-link inline-block"
-					>@astro/image
+					>Spatial Analysis
 				</a>:
-				<p class="inline-block sm:mt-2">
-					An Astro integration for optimising images in Astro projects.
-				</p>
+				<p class="inline-block sm:mt-2">Using machine learning and AI in spatial sciences.</p>
 			</li>
 			<li>
 				<a
@@ -63,11 +85,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 					target="_blank"
 					rel="noopener noreferrer"
 					class="cactus-link inline-block"
-					>Tailwind CSS
+					>Git and Github
 				</a>:
-				<p class="inline-block sm:mt-2">
-					Rapidly build modern websites without ever leaving your HTML.
-				</p>
+				<p class="inline-block sm:mt-2">All you ever need to know about Git and Github.</p>
 			</li>
 			<li>
 				<a
@@ -75,19 +95,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 					target="_blank"
 					rel="noopener noreferrer"
 					class="cactus-link inline-block"
-					>Markdown
+					>Generative AI
 				</a>:
-				<p class="inline-block sm:mt-2">Simple and easy-to-use markup language.</p>
-			</li>
-			<li>
-				<a
-					href="https://mdxjs.com/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>MDX
-				</a>:
-				<p class="inline-block sm:mt-2">Markdown for the component era.</p>
+				<p class="inline-block sm:mt-2">Using Stable Diffusion in business and research</p>
 			</li>
 			<li>
 				<a
@@ -95,9 +105,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 					target="_blank"
 					rel="noopener noreferrer"
 					class="cactus-link inline-block"
-					>Satori
+					>Astro
 				</a>:
-				<p class="inline-block sm:mt-2">Generating png Open Graph images for blog posts</p>
+				<p class="inline-block sm:mt-2">Building super fast websites with partial hydration</p>
 			</li>
 		</ul>
 	</section>
