@@ -5,11 +5,11 @@ export const MENU_LINKS = [
 	},
 	{
 		title: "AI",
-		path: "#",
+		path: "/generative",
 	},
 	{
 		title: "Science",
-		path: "#",
+		path: "/science",
 	},
 	{
 		title: "About",
@@ -26,4 +26,7 @@ export const SOCIAL_LINKS = {
 	github: "https://github.com/gunnarmallon",
 	twitter: "https://twitter.com/gunnarmallon",
 	instagram: "https://instagram.com/gunnarmallon",
+	linkedin: "https://www.linkedin.com/in/gunnar-mallon/",
+	youtube: "https://www.youtube.com/codekitchen/",
+	twitch: "https://twitch.com/docobelix",
 };

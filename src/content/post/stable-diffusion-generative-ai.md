@@ -3,9 +3,30 @@ title: "Generative AI - Stable Diffusion"
 publishDate: "20 April 2023"
 description: "The many uses of Stable Diffusion in Business and Research"
 tags: ["Blog", "Opinion", "business", "research", "AI", "Stable Diffusion", "Featured"]
+ogImage: "/social-card.png"
 ---
 
 ## Introduction
+
+```markdown {5}
+---
+# src/pages/post/blog-post.md
+layout: ../../layouts/BaseLayout.astro
+title: My Blog Post
+draft: true
+---
+
+This is my in-progress blog post.
+
+No page will be built for this post.
+
+To build and publish this post:
+
+- update the frontmatter to `draft: false` or
+- remove the `draft` property entirely.
+
+But, this page _will_ be returned by any matching `Astro.glob()` request.
+```
 
 Generative AI has become a powerful tool for businesses and researchers alike, enabling the creation of realistic images, audio, and text with minimal human intervention. One of the most promising techniques in the generative AI landscape is Stable Diffusion, which has already begun to revolutionize various domains. In this comprehensive yet engaging article, we'll delve into Stable Diffusion, its applications, and how it is transforming business and research.
 
@@ -60,3 +81,11 @@ As with any generative AI technology, Stable Diffusion raises ethical concerns r
 ## Conclusion
 
 Stable Diffusion is an exciting and powerful generative AI technique with vast potential in business and research. By understanding its capabilities and limitations, businesses and researchers can harness its potential to drive innovation, streamline processes, and unlock new possibilities. As Stable Diffusion continues to evolve, it will undoubtedly play an increasingly critical role in shaping the future of various industries.
+
+```
+
+```
+
+```
+
+```

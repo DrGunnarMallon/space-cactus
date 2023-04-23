@@ -4,11 +4,14 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
+import remarkCodeTitles from "remark-code-titles";
 
 // https://astro.build/config
 export default defineConfig({
 	site: "https://www.astro-theme-cactus.netlify.app/",
 	markdown: {
+		remarkPlugins: [remarkCodeTitles],
+		syntaxHighlight: "shiki",
 		shikiConfig: {
 			theme: "dracula",
 			wrap: true,

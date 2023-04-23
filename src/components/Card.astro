@@ -1,21 +1,23 @@
 ---
+import { Image } from "@astrojs/image/components";
+
 const { title, image, link } = Astro.props;
 ---
 
 <div class="w-fullp-0 hover:rotate-1 hover:transform hover:transition hover:duration-150">
 	<div class="max-w-sm rounded-lg border border-borderCard shadow dark:border-borderCard">
 		<a href={link}>
-			<img class="rounded-t-lg" src={image} alt="" height="200" />
+			<Image src={image} alt="" loading="lazy" class="rounded-t-lg" />
 		</a>
 		<div class="p-3">
 			<a href={link}>
 				<h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
 					{title}
 				</h5>
+				<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+					<slot />
+				</p>
 			</a>
-			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-				<slot />
-			</p>
 		</div>
 	</div>
 </div>

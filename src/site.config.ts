@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
 	// Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
 	title: "Academic musings",
 	// Meta property used as a default description meta property
-	description: "Research and Open Eduction by dr Gunnar Mallon",
+	description: "Generative AI, research, video tutorials, courses, programming, palaeoecology and more by dr Gunnar Mallon",
 	// HTML lang property, found in src/layouts/Base.astro L:18
 	lang: "en-GB",
 	// Meta property, found in src/components/BaseHead.astro L:42

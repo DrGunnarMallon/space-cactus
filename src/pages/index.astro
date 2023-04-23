@@ -10,37 +10,42 @@ import Card from "@/components/Card";
 const MAX_POSTS = 10;
 const allPosts = await getCollection("post");
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+
+import card1 from "../assets/images/landscape1.jpg";
+import card2 from "../assets/images/landscape2.jpg";
+import card3 from "../assets/images/landscape3.jpg";
 ---
 
-<PageLayout meta={{ title: "Home" }}>
+<PageLayout meta={{ title: "Academic musings" }}>
 	<section>
 		<h1 class="title mb-6">Hello World!</h1>
 		<p class="mb-4">
-			Welcome to my digital portfolio! As an AI enthusiast, researcher, and educator, I'm excited to
-			showcase my passion for all things AI and palaeo. Through stunning AI art, groundbreaking
-			research, tutorial videos, and full online courses, I aim to inspire and educate others on the
-			limitless possibilities of this rapidly growing field.
+			Hi there and welcome to my digital portfolio! I'm passionate of AI and palaeoecology, and I'm
+			thrilled to be able to share my passion with you. Here, you'll find a collection of my work,
+			including some beautiful AI-generated art, exciting research, informative tutorials, and even
+			some online courses.
 		</p>
 		<p class="mb-4">
-			Whether you're a fellow AI enthusiast, an aspiring programmer, or simply curious about the
-			future of technology, you're sure to find something engaging and thought-provoking here. So,
-			come along on this journey with me and let's explore the exciting world of AI together!
+			My goal is to inspire and educate others about the amazing potential of this rapidly-evolving
+			field. Whether you're an AI enthusiast like me, a budding programmer, or just curious about
+			the future of technology, there's something here for everyone. So, let's explore the world of
+			AI together!
 		</p>
 		<SocialList />
 	</section>
 	<section>
-		<CardList>
-			<Card title={"Generative Art"} image={"/landscape1.png"} link={"#"}>
-				Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
-				chronological order
+		<CardList cards="sm:grid-cols-3">
+			<Card title={"Generative Art"} image={card1} link={"generative"}>
+				Promts, models, LORA, tips, tricks, and lots of artwork. All images are made with <a
+					href="https://stability.ai/">Stable Diffusion.</a
+				>
 			</Card>
-			<Card title={"Tutorial Videos"} image={"/landscape2.png"} link={"#"}>
-				Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
-				chronological order
+			<Card title={"Tutorial Videos"} image={card2} link={"videos"}>
+				A selection of tutorials covering, generative ai, coding tips, academia, and the odd food
+				recipe.
 			</Card>
-			<Card title={"Full Courses"} image={"/landscape3.png"} link={"#"}>
-				Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
-				chronological order
+			<Card title={"Full Courses"} image={card3} link={"courses"}>
+				A series of full courses, covering Python, AI, Stable Diffusion, and Environmental Science
 			</Card>
 		</CardList>
 	</section>
@@ -60,53 +65,23 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		<h2 class="title mb-4 text-xl">Courses</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			<li>
-				<a
-					href="https://astro.build"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>Programming
-				</a>:
+				<a href="/courses" class="cactus-link inline-block">Programming</a>:
 				<p class="inline-block sm:mt-2">Python for Academia - From Zero to Hero</p>
 			</li>
 			<li>
-				<a
-					href="https://docs.astro.build/en/guides/integrations-guide/image/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>Spatial Analysis
-				</a>:
+				<a href="/courses" class="cactus-link inline-block">Spatial Analysis</a>:
 				<p class="inline-block sm:mt-2">Using machine learning and AI in spatial sciences.</p>
 			</li>
 			<li>
-				<a
-					href="https://tailwindcss.com"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>Git and Github
-				</a>:
+				<a href="/courses" class="cactus-link inline-block">Git and Github</a>:
 				<p class="inline-block sm:mt-2">All you ever need to know about Git and Github.</p>
 			</li>
 			<li>
-				<a
-					href="https://www.markdownguide.org/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>Generative AI
-				</a>:
+				<a href="/courses" class="cactus-link inline-block">Generative AI</a>:
 				<p class="inline-block sm:mt-2">Using Stable Diffusion in business and research</p>
 			</li>
 			<li>
-				<a
-					href="https://github.com/vercel/satori"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>Astro
-				</a>:
+				<a href="/courses" class="cactus-link inline-block">Astro</a>:
 				<p class="inline-block sm:mt-2">Building super fast websites with partial hydration</p>
 			</li>
 		</ul>
